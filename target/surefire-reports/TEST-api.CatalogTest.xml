@@ -1,0 +1,2784 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="api.CatalogTest" time="5.507" tests="2" errors="0" skipped="0" failures="2">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.class.path" value="C:\Users\kairskakov_52918\Desktop\autotests\airba-test-master\target\test-classes;C:\Users\kairskakov_52918\Desktop\autotests\airba-test-master\target\classes;C:\Users\kairskakov_52918\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\kairskakov_52918\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\kairskakov_52918\.m2\repository\io\rest-assured\rest-assured\5.3.0\rest-assured-5.3.0.jar;C:\Users\kairskakov_52918\.m2\repository\org\apache\groovy\groovy\4.0.6\groovy-4.0.6.jar;C:\Users\kairskakov_52918\.m2\repository\org\apache\groovy\groovy-xml\4.0.6\groovy-xml-4.0.6.jar;C:\Users\kairskakov_52918\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\kairskakov_52918\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\kairskakov_52918\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\kairskakov_52918\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\kairskakov_52918\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\kairskakov_52918\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\kairskakov_52918\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\kairskakov_52918\.m2\repository\io\rest-assured\json-path\5.3.0\json-path-5.3.0.jar;C:\Users\kairskakov_52918\.m2\repository\org\apache\groovy\groovy-json\4.0.6\groovy-json-4.0.6.jar;C:\Users\kairskakov_52918\.m2\repository\io\rest-assured\rest-assured-common\5.3.0\rest-assured-common-5.3.0.jar;C:\Users\kairskakov_52918\.m2\repository\io\rest-assured\xml-path\5.3.0\xml-path-5.3.0.jar;C:\Users\kairskakov_52918\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;"/>
+    <property name="java.vm.vendor" value="JetBrains s.r.o."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="user.timezone" value="Asia/Almaty"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.boot.library.path" value="C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 2021.3.1\jbr\bin"/>
+    <property name="sun.java.command" value="C:\Users\kairskakov_52918\AppData\Local\Temp\1\surefire8157609623188816514\surefirebooter-20230906142211951_3.jar C:\Users\kairskakov_52918\AppData\Local\Temp\1\surefire8157609623188816514 2023-09-06T14-22-11_730-jvmRun1 surefire-20230906142211951_1tmp surefire_0-20230906142211951_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\kairskakov_52918\Desktop\autotests\airba-test-master\target\test-classes;C:\Users\kairskakov_52918\Desktop\autotests\airba-test-master\target\classes;C:\Users\kairskakov_52918\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\kairskakov_52918\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\kairskakov_52918\.m2\repository\io\rest-assured\rest-assured\5.3.0\rest-assured-5.3.0.jar;C:\Users\kairskakov_52918\.m2\repository\org\apache\groovy\groovy\4.0.6\groovy-4.0.6.jar;C:\Users\kairskakov_52918\.m2\repository\org\apache\groovy\groovy-xml\4.0.6\groovy-xml-4.0.6.jar;C:\Users\kairskakov_52918\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\kairskakov_52918\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\kairskakov_52918\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\kairskakov_52918\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\kairskakov_52918\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\kairskakov_52918\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\kairskakov_52918\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\kairskakov_52918\.m2\repository\io\rest-assured\json-path\5.3.0\json-path-5.3.0.jar;C:\Users\kairskakov_52918\.m2\repository\org\apache\groovy\groovy-json\4.0.6\groovy-json-4.0.6.jar;C:\Users\kairskakov_52918\.m2\repository\io\rest-assured\rest-assured-common\5.3.0\rest-assured-common-5.3.0.jar;C:\Users\kairskakov_52918\.m2\repository\io\rest-assured\xml-path\5.3.0\xml-path-5.3.0.jar;C:\Users\kairskakov_52918\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\kairskakov_52918"/>
+    <property name="user.language" value="ru"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-02-08"/>
+    <property name="java.home" value="C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 2021.3.1\jbr"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\kairskakov_52918\Desktop\autotests\airba-test-master"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\kairskakov_52918\AppData\Local\Temp\1\surefire8157609623188816514\surefirebooter-20230906142211951_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.14.1+1-b1751.46"/>
+    <property name="user.name" value="kairskakov_52918"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1251"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="JBR-11.0.14.1.1-1751.46-jcef"/>
+    <property name="localRepository" value="C:\Users\kairskakov_52918\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\KAIRSK~1\AppData\Local\Temp\1\"/>
+    <property name="java.version" value="11.0.14.1"/>
+    <property name="user.dir" value="C:\Users\kairskakov_52918\Desktop\autotests\airba-test-master"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 2021.3.1\jbr\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\chromedriver;C:\Gradle\gradle-7.4.2\bin;C:\cmdline-tools\tools\platform-tools;C:\Program Files\Java\jdk-18.0.2.1\bin;C:\Users\kairskakov_52918\AppData\Local\Programs\Python\Python310;C:\Users\kairskakov_52918\AppData\Local\Programs\Python\Python310\Scripts;C:\Program Files\WindowsPowerShell\Scripts\HP.ClientScriptLibrary;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files\PowerShell\7\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\7-Zip;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Git\cmd;C:\Program Files\PowerShell\7\;C:\Program Files\PuTTY\;C:\Users\kairskakov_52918\AppData\Local\Microsoft\WindowsApps;C:\WebDriver\bin;C:\Users\kairskakov_52918\AppData\Local\JetBrains\Toolbox\scripts;C:\Users\kairskakov_52918\AppData\Local\Programs\Fiddler;C:\Users\kairskakov_52918\AppData\Local\Programs\mongosh\;C:\Users\kairskakov_52918\Downloads\apache-maven-3.9.4-bin\apache-maven-3.9.4\bin;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="JetBrains s.r.o."/>
+    <property name="java.vm.version" value="11.0.14.1+1-b1751.46"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="checkCatalogueTreeHasBreadBakery" classname="api.CatalogTest" time="3.162">
+    <failure message="1 expectation failed.&#10;JSON path data.categories.name[0] doesn&apos;t match.&#10;Expected: a collection containing &quot;РҐР»РµР± Рё РїРµРєР°СЂРЅСЏ&quot;&#10;  Actual: &lt;[Хлеб и пекарня, Мясная лавка, Рыба, икра и морепродукты, Молоко, яйца и сыр, Бакалея, соусы, консервы, Сладости, снеки и перекусы, Свежие овощи и фрукты, Замороженные продукты, Готовая еда, Напитки, Алкогольные напитки, Чистота и порядок, Товары для детей, Всё для учебы, Косметика, средства личной гигиены, Товары для животных, Здоровое питание]&gt;&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+JSON path data.categories.name[0] doesn't match.
+Expected: a collection containing "РҐР»РµР± Рё РїРµРєР°СЂРЅСЏ"
+  Actual: <[Хлеб и пекарня, Мясная лавка, Рыба, икра и морепродукты, Молоко, яйца и сыр, Бакалея, соусы, консервы, Сладости, снеки и перекусы, Свежие овощи и фрукты, Замороженные продукты, Готовая еда, Напитки, Алкогольные напитки, Чистота и порядок, Товары для детей, Всё для учебы, Косметика, средства личной гигиены, Товары для животных, Здоровое питание]>
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:270)
+	at io.restassured.specification.ResponseSpecification$body$2.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:212)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+	at api.CatalogTest.checkCatalogueTreeHasBreadBakery(CatalogTest.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 06 Sep 2023 08:22:15 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+Allow: GET, HEAD, OPTIONS
+Cache-Control: max-age=300
+Expires: Wed, 06 Sep 2023 08:27:15 GMT
+Referrer-Policy: same-origin
+Vary: Language
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 1; mode=block
+Content-Encoding: gzip
+
+{
+    "data": [
+        {
+            "id": 0,
+            "section": "ru",
+            "categories": [
+                {
+                    "id": 1615,
+                    "name": "Хлеб и пекарня",
+                    "items": [
+                        {
+                            "id": 1616,
+                            "name": "Хлеб",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_hleb_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_hleb_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1623,
+                            "name": "Выпечка и пироги",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_vypechka_i_pirogi_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_vypechka_i_pirogi_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        }
+                    ],
+                    "navigation_path": [
+                        {
+                            "id": 1614,
+                            "hierarchy_level": 0,
+                            "name": "Продукты"
+                        },
+                        {
+                            "id": 1615,
+                            "hierarchy_level": 1,
+                            "name": "Хлеб и пекарня"
+                        }
+                    ]
+                },
+                {
+                    "id": 1629,
+                    "name": "Мясная лавка",
+                    "items": [
+                        {
+                            "id": 1637,
+                            "name": "Мясо и птица",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_mjaso_i_ptitsa_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_mjaso_i_ptitsa_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1630,
+                            "name": "Колбасы и сосиски",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_kolbasy_i_delikatesy_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_kolbasy_i_delikatesy_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1631,
+                            "name": "Мясные деликатесы",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/mjasnye_delikatesy_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/mjasnye_delkikatesy_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        }
+                    ],
+                    "navigation_path": [
+                        {
+                            "id": 1614,
+                            "hierarchy_level": 0,
+                            "name": "Продукты"
+                        },
+                        {
+                            "id": 1629,
+                            "hierarchy_level": 1,
+                            "name": "Мясная лавка"
+                        }
+                    ]
+                },
+                {
+                    "id": 1648,
+                    "name": "Рыба, икра и морепродукты",
+                    "items": [
+                        {
+                            "id": 2046,
+                            "name": "Рыба",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/ryba_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/ryba_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 2050,
+                            "name": "Морепродукты",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/moreprodukty_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/moreprodukty_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        }
+                    ],
+                    "navigation_path": [
+                        {
+                            "id": 1614,
+                            "hierarchy_level": 0,
+                            "name": "Продукты"
+                        },
+                        {
+                            "id": 1648,
+                            "hierarchy_level": 1,
+                            "name": "Рыба, икра и морепродукты"
+                        }
+                    ]
+                },
+                {
+                    "id": 1661,
+                    "name": "Молоко, яйца и сыр",
+                    "items": [
+                        {
+                            "id": 1662,
+                            "name": "Сыры",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_syry_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_syry_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1671,
+                            "name": "Молоко, кисломолочные продукты",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_molochnye_produkty_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_molochnye_produkty_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1677,
+                            "name": "Йогурты и десерты",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_iogurty_i_deserty_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_iogurty_i_deserty_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1681,
+                            "name": "Творог, сметана",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_tvorogsmetana_3",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_tvorogsmetana_2",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1684,
+                            "name": "Детские молочные продукты",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_detskie_molochnye_produkty_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_detskie_molochnye_produkty_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1688,
+                            "name": "Масло и яйцо",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_maslo_i_jaitso_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_maslo_i_jaitso_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        }
+                    ],
+                    "navigation_path": [
+                        {
+                            "id": 1614,
+                            "hierarchy_level": 0,
+                            "name": "Продукты"
+                        },
+                        {
+                            "id": 1661,
+                            "hierarchy_level": 1,
+                            "name": "Молоко, яйца и сыр"
+                        }
+                    ]
+                },
+                {
+                    "id": 1692,
+                    "name": "Бакалея, соусы, консервы",
+                    "items": [
+                        {
+                            "id": 1693,
+                            "name": "Масла и соусы",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_masla_sousy_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_masla_i_sousy_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1704,
+                            "name": "Консервы",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_konservy_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_konservy_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1709,
+                            "name": "Для выпечки",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_dlja_vypechki_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_dlja_vypechki_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1714,
+                            "name": "Сахар, соль, специи",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_saharsol_i_spetsii_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_saharsol_i_spetsii_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1720,
+                            "name": "Чай, кофе и какао",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_chaikofe_i_kakao_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_chaikofe_i_kakao_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1726,
+                            "name": "Макароны, крупы и каши",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_makaronykrupy_i_kashi_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_makaronykrupy_i_kashi_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1734,
+                            "name": "Быстрое приготовление",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_bystroe_prigotovlenie_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_bystroe_prigotovlenie_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        }
+                    ],
+                    "navigation_path": [
+                        {
+                            "id": 1614,
+                            "hierarchy_level": 0,
+                            "name": "Продукты"
+                        },
+                        {
+                            "id": 1692,
+                            "hierarchy_level": 1,
+                            "name": "Бакалея, соусы, консервы"
+                        }
+                    ]
+                },
+                {
+                    "id": 1737,
+                    "name": "Сладости, снеки и перекусы",
+                    "items": [
+                        {
+                            "id": 1848,
+                            "name": "Торты, печенье, вафли",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_tortypechenevafli_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_tortypechenevafli_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1745,
+                            "name": "Снеки и перекусы",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_sneki_i_perekusy_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_sneki_i_perekusy_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1751,
+                            "name": "Сухофрукты и орехи",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_suhofrukty_i_orehi_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_suhofrukty_i_orehi_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1755,
+                            "name": "Варенье, мёд и пасты",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_varenemed_i_pasty_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_varenemed_i_pasty_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1763,
+                            "name": "Жвачка, драже, мармелад",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_zhvachka_drazhe_marmelad_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_zhvachka_drazhe_marmelad_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1772,
+                            "name": "Шоколад и конфеты",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_shokolad_i_konfety_3",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_shokolad_i_konfety_2",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        }
+                    ],
+                    "navigation_path": [
+                        {
+                            "id": 1614,
+                            "hierarchy_level": 0,
+                            "name": "Продукты"
+                        },
+                        {
+                            "id": 1737,
+                            "hierarchy_level": 1,
+                            "name": "Сладости, снеки и перекусы"
+                        }
+                    ]
+                },
+                {
+                    "id": 1781,
+                    "name": "Свежие овощи и фрукты",
+                    "items": [
+                        {
+                            "id": 1782,
+                            "name": "Фрукты, ягоды",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_fruktyjagody_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_fruktyjagody_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1785,
+                            "name": "Овощи, грибы и зелень",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_ovoschigriby_i_zelen_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_ovoschigriby_i_zelen_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        }
+                    ],
+                    "navigation_path": [
+                        {
+                            "id": 1614,
+                            "hierarchy_level": 0,
+                            "name": "Продукты"
+                        },
+                        {
+                            "id": 1781,
+                            "hierarchy_level": 1,
+                            "name": "Свежие овощи и фрукты"
+                        }
+                    ]
+                },
+                {
+                    "id": 1798,
+                    "name": "Замороженные продукты",
+                    "items": [
+                        {
+                            "id": 1799,
+                            "name": "Полуфабрикаты",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_polufabrikaty_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_polufabrikaty_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1810,
+                            "name": "Из мяса, птицы и рыбы",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_iz_mjasaptitsy_i_ryby_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_iz_mjasaptitsy_i_ryby_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1815,
+                            "name": "Для барбекю и запекания",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_dlja_barbekju_i_zapekanija_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_dlja_barbekju_i_zapekanija_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1819,
+                            "name": "Фрукты, ягоды и овощи",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_fruktyjagody_i_ovoschi_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_fruktyjagody_i_ovoschi_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1823,
+                            "name": "Мороженое и лёд",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_morozhenoe_i_led_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_morozhenoe_i_led_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        }
+                    ],
+                    "navigation_path": [
+                        {
+                            "id": 1614,
+                            "hierarchy_level": 0,
+                            "name": "Продукты"
+                        },
+                        {
+                            "id": 1798,
+                            "hierarchy_level": 1,
+                            "name": "Замороженные продукты"
+                        }
+                    ]
+                },
+                {
+                    "id": 1837,
+                    "name": "Готовая еда",
+                    "items": [
+                        {
+                            "id": 1838,
+                            "name": "Кулинария",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_kulinarija_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_kulinarija_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1845,
+                            "name": "Соленья",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_solenja_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_solenja_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        }
+                    ],
+                    "navigation_path": [
+                        {
+                            "id": 1614,
+                            "hierarchy_level": 0,
+                            "name": "Продукты"
+                        },
+                        {
+                            "id": 1837,
+                            "hierarchy_level": 1,
+                            "name": "Готовая еда"
+                        }
+                    ]
+                },
+                {
+                    "id": 1859,
+                    "name": "Напитки",
+                    "items": [
+                        {
+                            "id": 1860,
+                            "name": "Вода",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_voda_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_voda_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1865,
+                            "name": "Соки, нектары и компоты",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_sokinektary_i_kompoty_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_sokinektary_i_kompoty_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1870,
+                            "name": "Лимонады, чай и квас",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_limonadychai_i_kvas_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_limonadychai_i_kvas_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        }
+                    ],
+                    "navigation_path": [
+                        {
+                            "id": 1614,
+                            "hierarchy_level": 0,
+                            "name": "Продукты"
+                        },
+                        {
+                            "id": 1859,
+                            "hierarchy_level": 1,
+                            "name": "Напитки"
+                        }
+                    ]
+                },
+                {
+                    "id": 1876,
+                    "name": "Алкогольные напитки",
+                    "items": [
+                        {
+                            "id": 2053,
+                            "name": "Вино",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/vino_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/vino_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": true
+                        },
+                        {
+                            "id": 2057,
+                            "name": "Пиво, сидр",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/pivo_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/pivo_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": true
+                        },
+                        {
+                            "id": 2074,
+                            "name": "Ликеры, аперитивы",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/likeryaperitivy_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/likeryaperitivy_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": true
+                        },
+                        {
+                            "id": 1882,
+                            "name": "Крепкий алкоголь",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/krepkii_alkogol_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/krepkii_alkogol_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": true
+                        }
+                    ],
+                    "navigation_path": [
+                        {
+                            "id": 1614,
+                            "hierarchy_level": 0,
+                            "name": "Продукты"
+                        },
+                        {
+                            "id": 1876,
+                            "hierarchy_level": 1,
+                            "name": "Алкогольные напитки"
+                        }
+                    ]
+                },
+                {
+                    "id": 1940,
+                    "name": "Чистота и порядок",
+                    "items": [
+                        {
+                            "id": 1957,
+                            "name": "Бумага и салфетки",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_bumaga_i_salfetki_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_bumaga_i_salfetki_3",
+                            "background_color": "#E7EED1",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1967,
+                            "name": "Бытовая химия",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_bytovaja_himija_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_bytovaja_himija_3",
+                            "background_color": "#E7EED1",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1981,
+                            "name": "Для одежды и обуви",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_dlja_odezhdy_i_obuvi_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_dlja_odezhdy_i_obuvi_3",
+                            "background_color": "#E7EED1",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1984,
+                            "name": "Товары для дома",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_tovary_dlja_doma_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_tovary_dlja_doma_3",
+                            "background_color": "#E7EED1",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1993,
+                            "name": "Текстиль",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_tekstil_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_tekstil",
+                            "background_color": "#E7EED1",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 2180,
+                            "name": "Посуда",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/posuda_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/posuda_3",
+                            "background_color": "#E7EED1",
+                            "is_alcohol": false
+                        }
+                    ],
+                    "navigation_path": [
+                        {
+                            "id": 1939,
+                            "hierarchy_level": 0,
+                            "name": "Для дома"
+                        },
+                        {
+                            "id": 1940,
+                            "hierarchy_level": 1,
+                            "name": "Чистота и порядок"
+                        }
+                    ]
+                },
+                {
+                    "id": 1922,
+                    "name": "Товары для детей",
+                    "items": [
+                        {
+                            "id": 1923,
+                            "name": "Питание",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_pitanie_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_pitanie_3",
+                            "background_color": "#E3E8EF",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1926,
+                            "name": "Аксессуары для малышей",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_aksessuary_dlja_malyshei_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_aksessuary_dlja_malyshei_3",
+                            "background_color": "#E3E8EF",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1929,
+                            "name": "Гигиена и бытовая химия",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_gigiena-2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_gigiena-3",
+                            "background_color": "#E3E8EF",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1935,
+                            "name": "Досуг",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_dosug-2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_dosug-3",
+                            "background_color": "#E3E8EF",
+                            "is_alcohol": false
+                        }
+                    ],
+                    "navigation_path": [
+                        {
+                            "id": 1921,
+                            "hierarchy_level": 0,
+                            "name": "Детям"
+                        },
+                        {
+                            "id": 1922,
+                            "hierarchy_level": 1,
+                            "name": "Товары для детей"
+                        }
+                    ]
+                },
+                {
+                    "id": 2209,
+                    "name": "Всё для учебы",
+                    "items": [
+                        {
+                            "id": 2210,
+                            "name": "Канцелярские товары",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_kantseljarskie-2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_kantseljarskie-3",
+                            "background_color": "#E3E8EF",
+                            "is_alcohol": false
+                        }
+                    ],
+                    "navigation_path": [
+                        {
+                            "id": 1921,
+                            "hierarchy_level": 0,
+                            "name": "Детям"
+                        },
+                        {
+                            "id": 2209,
+                            "hierarchy_level": 1,
+                            "name": "Всё для учебы"
+                        }
+                    ]
+                },
+                {
+                    "id": 2107,
+                    "name": "Косметика, средства личной гигиены",
+                    "items": [
+                        {
+                            "id": 2108,
+                            "name": "Уход за полостью рта",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/uhod_za_polostjurta_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/uhod_za_polostjurta_3",
+                            "background_color": "#EFE5D4",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 2112,
+                            "name": "Женская гигиена",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/zhenskaja_gigiena_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/zhenskaja_gigiena_3",
+                            "background_color": "#EFE5D4",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 2115,
+                            "name": "Уход за лицом",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/uhod_za_litsom_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/uhod_za_litsom_3",
+                            "background_color": "#EFE5D4",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 2121,
+                            "name": "Уход за волосами",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/uhod_za_volosami_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/uhod_za_volosami_3",
+                            "background_color": "#EFE5D4",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 2126,
+                            "name": "Уход за телом",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/uhod_za_telom_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/uhod_za_telom_3",
+                            "background_color": "#EFE5D4",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 2134,
+                            "name": "Подарочные наборы",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/podarochnye_nabory_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/podarochnye_nabory_3",
+                            "background_color": "#EFE5D4",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 2138,
+                            "name": "Средства индивидуальной защиты",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/sredstva_ind_zaschity_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/sredstva_ind_zaschity_3",
+                            "background_color": "#EFE5D4",
+                            "is_alcohol": false
+                        }
+                    ],
+                    "navigation_path": [
+                        {
+                            "id": 2106,
+                            "hierarchy_level": 0,
+                            "name": "Красота"
+                        },
+                        {
+                            "id": 2107,
+                            "hierarchy_level": 1,
+                            "name": "Косметика, средства личной гигиены"
+                        }
+                    ]
+                },
+                {
+                    "id": 1996,
+                    "name": "Товары для животных",
+                    "items": [
+                        {
+                            "id": 1997,
+                            "name": "Для кошек",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_dlja_koshek_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_dlja_koshek_3",
+                            "background_color": "#EFE5D4",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 2000,
+                            "name": "Для собак",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_dlja_sobak_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_dlja_sobak_3",
+                            "background_color": "#EFE5D4",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 2172,
+                            "name": "Другие питомцы",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/drugie_pitomtsy_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/drugie_pitomtsy_3",
+                            "background_color": "#EFE5D4",
+                            "is_alcohol": false
+                        }
+                    ],
+                    "navigation_path": [
+                        {
+                            "id": 1995,
+                            "hierarchy_level": 0,
+                            "name": "Zoo"
+                        },
+                        {
+                            "id": 1996,
+                            "hierarchy_level": 1,
+                            "name": "Товары для животных"
+                        }
+                    ]
+                },
+                {
+                    "id": 1884,
+                    "name": "Здоровое питание",
+                    "items": [
+                        {
+                            "id": 1892,
+                            "name": "Продукты без сахара",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_produkty_bez_sahara_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_produkty_bez_sahara_3",
+                            "background_color": "#F1E5E5",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1898,
+                            "name": "Диетические продукты и перекусы",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_dieticheskie_produkty_i_perekusy_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_dieticheskie_produkty_i_perekusy_3",
+                            "background_color": "#F1E5E5",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1906,
+                            "name": "Альтернативные продукты",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_alternativnye_produkty_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_alternativnye_produkty_3",
+                            "background_color": "#F1E5E5",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1913,
+                            "name": "Спортивное питание и витамины",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_sportivnoe_pitanie_i_vitaminy_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_sportivnoe_pitanie_i_vitaminy_3",
+                            "background_color": "#F1E5E5",
+                            "is_alcohol": false
+                        }
+                    ],
+                    "navigation_path": [
+                        {
+                            "id": 1883,
+                            "hierarchy_level": 0,
+                            "name": "Полезно"
+                        },
+                        {
+                            "id": 1884,
+                            "hierarchy_level": 1,
+                            "name": "Здоровое питание"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1614,
+            "section": "Продукты",
+            "categories": [
+                {
+                    "id": 1615,
+                    "name": "Хлеб и пекарня",
+                    "items": [
+                        {
+                            "id": 1616,
+                            "name": "Хлеб",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_hleb_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_hleb_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1623,
+                            "name": "Выпечка и пироги",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_vypechka_i_pirogi_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_vypechka_i_pirogi_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        }
+                    ],
+                    "navigation_path": [
+                        {
+                            "id": 1614,
+                            "hierarchy_level": 0,
+                            "name": "Продукты"
+                        },
+                        {
+                            "id": 1615,
+                            "hierarchy_level": 1,
+                            "name": "Хлеб и пекарня"
+                        }
+                    ]
+                },
+                {
+                    "id": 1629,
+                    "name": "Мясная лавка",
+                    "items": [
+                        {
+                            "id": 1637,
+                            "name": "Мясо и птица",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_mjaso_i_ptitsa_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_mjaso_i_ptitsa_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1630,
+                            "name": "Колбасы и сосиски",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_kolbasy_i_delikatesy_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_kolbasy_i_delikatesy_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1631,
+                            "name": "Мясные деликатесы",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/mjasnye_delikatesy_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/mjasnye_delkikatesy_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        }
+                    ],
+                    "navigation_path": [
+                        {
+                            "id": 1614,
+                            "hierarchy_level": 0,
+                            "name": "Продукты"
+                        },
+                        {
+                            "id": 1629,
+                            "hierarchy_level": 1,
+                            "name": "Мясная лавка"
+                        }
+                    ]
+                },
+                {
+                    "id": 1648,
+                    "name": "Рыба, икра и морепродукты",
+                    "items": [
+                        {
+                            "id": 2046,
+                            "name": "Рыба",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/ryba_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/ryba_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 2050,
+                            "name": "Морепродукты",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/moreprodukty_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/moreprodukty_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        }
+                    ],
+                    "navigation_path": [
+                        {
+                            "id": 1614,
+                            "hierarchy_level": 0,
+                            "name": "Продукты"
+                        },
+                        {
+                            "id": 1648,
+                            "hierarchy_level": 1,
+                            "name": "Рыба, икра и морепродукты"
+                        }
+                    ]
+                },
+                {
+                    "id": 1661,
+                    "name": "Молоко, яйца и сыр",
+                    "items": [
+                        {
+                            "id": 1662,
+                            "name": "Сыры",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_syry_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_syry_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1671,
+                            "name": "Молоко, кисломолочные продукты",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_molochnye_produkty_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_molochnye_produkty_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1677,
+                            "name": "Йогурты и десерты",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_iogurty_i_deserty_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_iogurty_i_deserty_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1681,
+                            "name": "Творог, сметана",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_tvorogsmetana_3",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_tvorogsmetana_2",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1684,
+                            "name": "Детские молочные продукты",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_detskie_molochnye_produkty_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_detskie_molochnye_produkty_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1688,
+                            "name": "Масло и яйцо",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_maslo_i_jaitso_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_maslo_i_jaitso_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        }
+                    ],
+                    "navigation_path": [
+                        {
+                            "id": 1614,
+                            "hierarchy_level": 0,
+                            "name": "Продукты"
+                        },
+                        {
+                            "id": 1661,
+                            "hierarchy_level": 1,
+                            "name": "Молоко, яйца и сыр"
+                        }
+                    ]
+                },
+                {
+                    "id": 1692,
+                    "name": "Бакалея, соусы, консервы",
+                    "items": [
+                        {
+                            "id": 1693,
+                            "name": "Масла и соусы",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_masla_sousy_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_masla_i_sousy_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1704,
+                            "name": "Консервы",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_konservy_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_konservy_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1709,
+                            "name": "Для выпечки",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_dlja_vypechki_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_dlja_vypechki_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1714,
+                            "name": "Сахар, соль, специи",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_saharsol_i_spetsii_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_saharsol_i_spetsii_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1720,
+                            "name": "Чай, кофе и какао",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_chaikofe_i_kakao_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_chaikofe_i_kakao_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1726,
+                            "name": "Макароны, крупы и каши",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_makaronykrupy_i_kashi_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_makaronykrupy_i_kashi_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1734,
+                            "name": "Быстрое приготовление",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_bystroe_prigotovlenie_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_bystroe_prigotovlenie_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        }
+                    ],
+                    "navigation_path": [
+                        {
+                            "id": 1614,
+                            "hierarchy_level": 0,
+                            "name": "Продукты"
+                        },
+                        {
+                            "id": 1692,
+                            "hierarchy_level": 1,
+                            "name": "Бакалея, соусы, консервы"
+                        }
+                    ]
+                },
+                {
+                    "id": 1737,
+                    "name": "Сладости, снеки и перекусы",
+                    "items": [
+                        {
+                            "id": 1848,
+                            "name": "Торты, печенье, вафли",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_tortypechenevafli_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_tortypechenevafli_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1745,
+                            "name": "Снеки и перекусы",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_sneki_i_perekusy_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_sneki_i_perekusy_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1751,
+                            "name": "Сухофрукты и орехи",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_suhofrukty_i_orehi_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_suhofrukty_i_orehi_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1755,
+                            "name": "Варенье, мёд и пасты",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_varenemed_i_pasty_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_varenemed_i_pasty_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1763,
+                            "name": "Жвачка, драже, мармелад",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_zhvachka_drazhe_marmelad_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_zhvachka_drazhe_marmelad_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1772,
+                            "name": "Шоколад и конфеты",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_shokolad_i_konfety_3",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_shokolad_i_konfety_2",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        }
+                    ],
+                    "navigation_path": [
+                        {
+                            "id": 1614,
+                            "hierarchy_level": 0,
+                            "name": "Продукты"
+                        },
+                        {
+                            "id": 1737,
+                            "hierarchy_level": 1,
+                            "name": "Сладости, снеки и перекусы"
+                        }
+                    ]
+                },
+                {
+                    "id": 1781,
+                    "name": "Свежие овощи и фрукты",
+                    "items": [
+                        {
+                            "id": 1782,
+                            "name": "Фрукты, ягоды",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_fruktyjagody_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_fruktyjagody_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1785,
+                            "name": "Овощи, грибы и зелень",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_ovoschigriby_i_zelen_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_ovoschigriby_i_zelen_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        }
+                    ],
+                    "navigation_path": [
+                        {
+                            "id": 1614,
+                            "hierarchy_level": 0,
+                            "name": "Продукты"
+                        },
+                        {
+                            "id": 1781,
+                            "hierarchy_level": 1,
+                            "name": "Свежие овощи и фрукты"
+                        }
+                    ]
+                },
+                {
+                    "id": 1798,
+                    "name": "Замороженные продукты",
+                    "items": [
+                        {
+                            "id": 1799,
+                            "name": "Полуфабрикаты",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_polufabrikaty_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_polufabrikaty_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1810,
+                            "name": "Из мяса, птицы и рыбы",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_iz_mjasaptitsy_i_ryby_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_iz_mjasaptitsy_i_ryby_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1815,
+                            "name": "Для барбекю и запекания",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_dlja_barbekju_i_zapekanija_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_dlja_barbekju_i_zapekanija_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1819,
+                            "name": "Фрукты, ягоды и овощи",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_fruktyjagody_i_ovoschi_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_fruktyjagody_i_ovoschi_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1823,
+                            "name": "Мороженое и лёд",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_morozhenoe_i_led_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_morozhenoe_i_led_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        }
+                    ],
+                    "navigation_path": [
+                        {
+                            "id": 1614,
+                            "hierarchy_level": 0,
+                            "name": "Продукты"
+                        },
+                        {
+                            "id": 1798,
+                            "hierarchy_level": 1,
+                            "name": "Замороженные продукты"
+                        }
+                    ]
+                },
+                {
+                    "id": 1837,
+                    "name": "Готовая еда",
+                    "items": [
+                        {
+                            "id": 1838,
+                            "name": "Кулинария",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_kulinarija_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_kulinarija_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1845,
+                            "name": "Соленья",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_solenja_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_solenja_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        }
+                    ],
+                    "navigation_path": [
+                        {
+                            "id": 1614,
+                            "hierarchy_level": 0,
+                            "name": "Продукты"
+                        },
+                        {
+                            "id": 1837,
+                            "hierarchy_level": 1,
+                            "name": "Готовая еда"
+                        }
+                    ]
+                },
+                {
+                    "id": 1859,
+                    "name": "Напитки",
+                    "items": [
+                        {
+                            "id": 1860,
+                            "name": "Вода",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_voda_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_voda_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1865,
+                            "name": "Соки, нектары и компоты",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_sokinektary_i_kompoty_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_sokinektary_i_kompoty_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1870,
+                            "name": "Лимонады, чай и квас",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_limonadychai_i_kvas_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_limonadychai_i_kvas_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": false
+                        }
+                    ],
+                    "navigation_path": [
+                        {
+                            "id": 1614,
+                            "hierarchy_level": 0,
+                            "name": "Продукты"
+                        },
+                        {
+                            "id": 1859,
+                            "hierarchy_level": 1,
+                            "name": "Напитки"
+                        }
+                    ]
+                },
+                {
+                    "id": 1876,
+                    "name": "Алкогольные напитки",
+                    "items": [
+                        {
+                            "id": 2053,
+                            "name": "Вино",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/vino_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/vino_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": true
+                        },
+                        {
+                            "id": 2057,
+                            "name": "Пиво, сидр",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/pivo_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/pivo_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": true
+                        },
+                        {
+                            "id": 2074,
+                            "name": "Ликеры, аперитивы",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/likeryaperitivy_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/likeryaperitivy_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": true
+                        },
+                        {
+                            "id": 1882,
+                            "name": "Крепкий алкоголь",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/krepkii_alkogol_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/krepkii_alkogol_3",
+                            "background_color": "#EBEDF0",
+                            "is_alcohol": true
+                        }
+                    ],
+                    "navigation_path": [
+                        {
+                            "id": 1614,
+                            "hierarchy_level": 0,
+                            "name": "Продукты"
+                        },
+                        {
+                            "id": 1876,
+                            "hierarchy_level": 1,
+                            "name": "Алкогольные напитки"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1939,
+            "section": "Для дома",
+            "categories": [
+                {
+                    "id": 1940,
+                    "name": "Чистота и порядок",
+                    "items": [
+                        {
+                            "id": 1957,
+                            "name": "Бумага и салфетки",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_bumaga_i_salfetki_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_bumaga_i_salfetki_3",
+                            "background_color": "#E7EED1",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1967,
+                            "name": "Бытовая химия",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_bytovaja_himija_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_bytovaja_himija_3",
+                            "background_color": "#E7EED1",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1981,
+                            "name": "Для одежды и обуви",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_dlja_odezhdy_i_obuvi_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_dlja_odezhdy_i_obuvi_3",
+                            "background_color": "#E7EED1",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1984,
+                            "name": "Товары для дома",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_tovary_dlja_doma_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_tovary_dlja_doma_3",
+                            "background_color": "#E7EED1",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1993,
+                            "name": "Текстиль",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_tekstil_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_tekstil",
+                            "background_color": "#E7EED1",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 2180,
+                            "name": "Посуда",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/posuda_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/posuda_3",
+                            "background_color": "#E7EED1",
+                            "is_alcohol": false
+                        }
+                    ],
+                    "navigation_path": [
+                        {
+                            "id": 1939,
+                            "hierarchy_level": 0,
+                            "name": "Для дома"
+                        },
+                        {
+                            "id": 1940,
+                            "hierarchy_level": 1,
+                            "name": "Чистота и порядок"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1921,
+            "section": "Детям",
+            "categories": [
+                {
+                    "id": 1922,
+                    "name": "Товары для детей",
+                    "items": [
+                        {
+                            "id": 1923,
+                            "name": "Питание",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_pitanie_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_pitanie_3",
+                            "background_color": "#E3E8EF",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1926,
+                            "name": "Аксессуары для малышей",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_aksessuary_dlja_malyshei_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_aksessuary_dlja_malyshei_3",
+                            "background_color": "#E3E8EF",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1929,
+                            "name": "Гигиена и бытовая химия",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_gigiena-2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_gigiena-3",
+                            "background_color": "#E3E8EF",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1935,
+                            "name": "Досуг",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_dosug-2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_dosug-3",
+                            "background_color": "#E3E8EF",
+                            "is_alcohol": false
+                        }
+                    ],
+                    "navigation_path": [
+                        {
+                            "id": 1921,
+                            "hierarchy_level": 0,
+                            "name": "Детям"
+                        },
+                        {
+                            "id": 1922,
+                            "hierarchy_level": 1,
+                            "name": "Товары для детей"
+                        }
+                    ]
+                },
+                {
+                    "id": 2209,
+                    "name": "Всё для учебы",
+                    "items": [
+                        {
+                            "id": 2210,
+                            "name": "Канцелярские товары",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_kantseljarskie-2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_kantseljarskie-3",
+                            "background_color": "#E3E8EF",
+                            "is_alcohol": false
+                        }
+                    ],
+                    "navigation_path": [
+                        {
+                            "id": 1921,
+                            "hierarchy_level": 0,
+                            "name": "Детям"
+                        },
+                        {
+                            "id": 2209,
+                            "hierarchy_level": 1,
+                            "name": "Всё для учебы"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2106,
+            "section": "Красота",
+            "categories": [
+                {
+                    "id": 2107,
+                    "name": "Косметика, средства личной гигиены",
+                    "items": [
+                        {
+                            "id": 2108,
+                            "name": "Уход за полостью рта",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/uhod_za_polostjurta_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/uhod_za_polostjurta_3",
+                            "background_color": "#EFE5D4",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 2112,
+                            "name": "Женская гигиена",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/zhenskaja_gigiena_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/zhenskaja_gigiena_3",
+                            "background_color": "#EFE5D4",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 2115,
+                            "name": "Уход за лицом",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/uhod_za_litsom_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/uhod_za_litsom_3",
+                            "background_color": "#EFE5D4",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 2121,
+                            "name": "Уход за волосами",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/uhod_za_volosami_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/uhod_za_volosami_3",
+                            "background_color": "#EFE5D4",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 2126,
+                            "name": "Уход за телом",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/uhod_za_telom_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/uhod_za_telom_3",
+                            "background_color": "#EFE5D4",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 2134,
+                            "name": "Подарочные наборы",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/podarochnye_nabory_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/podarochnye_nabory_3",
+                            "background_color": "#EFE5D4",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 2138,
+                            "name": "Средства индивидуальной защиты",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/sredstva_ind_zaschity_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/sredstva_ind_zaschity_3",
+                            "background_color": "#EFE5D4",
+                            "is_alcohol": false
+                        }
+                    ],
+                    "navigation_path": [
+                        {
+                            "id": 2106,
+                            "hierarchy_level": 0,
+                            "name": "Красота"
+                        },
+                        {
+                            "id": 2107,
+                            "hierarchy_level": 1,
+                            "name": "Косметика, средства личной гигиены"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1995,
+            "section": "Zoo",
+            "categories": [
+                {
+                    "id": 1996,
+                    "name": "Товары для животных",
+                    "items": [
+                        {
+                            "id": 1997,
+                            "name": "Для кошек",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_dlja_koshek_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_dlja_koshek_3",
+                            "background_color": "#EFE5D4",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 2000,
+                            "name": "Для собак",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_dlja_sobak_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_dlja_sobak_3",
+                            "background_color": "#EFE5D4",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 2172,
+                            "name": "Другие питомцы",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/drugie_pitomtsy_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/drugie_pitomtsy_3",
+                            "background_color": "#EFE5D4",
+                            "is_alcohol": false
+                        }
+                    ],
+                    "navigation_path": [
+                        {
+                            "id": 1995,
+                            "hierarchy_level": 0,
+                            "name": "Zoo"
+                        },
+                        {
+                            "id": 1996,
+                            "hierarchy_level": 1,
+                            "name": "Товары для животных"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1883,
+            "section": "Полезно",
+            "categories": [
+                {
+                    "id": 1884,
+                    "name": "Здоровое питание",
+                    "items": [
+                        {
+                            "id": 1892,
+                            "name": "Продукты без сахара",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_produkty_bez_sahara_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_produkty_bez_sahara_3",
+                            "background_color": "#F1E5E5",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1898,
+                            "name": "Диетические продукты и перекусы",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_dieticheskie_produkty_i_perekusy_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_dieticheskie_produkty_i_perekusy_3",
+                            "background_color": "#F1E5E5",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1906,
+                            "name": "Альтернативные продукты",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_alternativnye_produkty_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_alternativnye_produkty_3",
+                            "background_color": "#F1E5E5",
+                            "is_alcohol": false
+                        },
+                        {
+                            "id": 1913,
+                            "name": "Спортивное питание и витамины",
+                            "image_1x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_sportivnoe_pitanie_i_vitaminy_2",
+                            "image_2x": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/new_sportivnoe_pitanie_i_vitaminy_3",
+                            "background_color": "#F1E5E5",
+                            "is_alcohol": false
+                        }
+                    ],
+                    "navigation_path": [
+                        {
+                            "id": 1883,
+                            "hierarchy_level": 0,
+                            "name": "Полезно"
+                        },
+                        {
+                            "id": 1884,
+                            "hierarchy_level": 1,
+                            "name": "Здоровое питание"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "error": null
+}
+]]></system-out>
+  </testcase>
+  <testcase name="checkAddedProductInCard" classname="api.CatalogTest" time="2.306">
+    <failure message="1 expectation failed.&#10;JSON path data.cart.products.name[0] doesn&apos;t match.&#10;Expected: Р‘Р°РіРµС‚ РђР»СЊРїРёР№СЃРєРёР№ РѕС‚ РїРµРєР°СЂРЅРё Airba Fresh 300 Рі&#10;  Actual: Багет Альпийский от пекарни Airba Fresh 300 г&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+JSON path data.cart.products.name[0] doesn't match.
+Expected: Р‘Р°РіРµС‚ РђР»СЊРїРёР№СЃРєРёР№ РѕС‚ РїРµРєР°СЂРЅРё Airba Fresh 300 Рі
+  Actual: Багет Альпийский от пекарни Airba Fresh 300 г
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:270)
+	at io.restassured.specification.ResponseSpecification$body$2.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at io.restassured.specification.ResponseSpecification$body$2.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+	at api.CatalogTest.checkAddedProductInCard(CatalogTest.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 06 Sep 2023 08:22:17 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+Allow: POST, OPTIONS
+Referrer-Policy: same-origin
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 1; mode=block
+Content-Encoding: gzip
+
+{
+    "data": {
+        "uuid": "8c32ca1e-20eb-4007-bbbd-928c271f90ff",
+        "common_uuid": "b5e382ac-3181-4899-ab83-c5338c5a4a86",
+        "is_active": true,
+        "delivery": {
+            "id": 152001,
+            "timeslot": null,
+            "address": {
+                "id": 42264,
+                "district": "2-й микрорайон",
+                "street": "Алматы",
+                "building": "40Г",
+                "is_private_home": false,
+                "entrance": "3",
+                "floor": "4",
+                "flat": "119",
+                "longitude": 76.860565,
+                "latitude": 43.232572,
+                "label": "Дом",
+                "comment": null,
+                "full_address": "2-й микрорайон, Алматы, 40Г",
+                "is_current": true,
+                "is_editable": true,
+                "is_removable": true,
+                "city": {
+                    "id": 1,
+                    "name": "Алматы",
+                    "longitude": 76.889709,
+                    "latitude": 43.238949
+                }
+            },
+            "full_address": "2-й микрорайон, Алматы, 40Г",
+            "total_address_count": 1
+        },
+        "cart": {
+            "sum_to_free_delivery": 6405.0,
+            "items_count": 1,
+            "total_amount": 595.0,
+            "products_amount": 595.0,
+            "alcohol_amount": 0.0,
+            "min_amount": 100.0,
+            "products": [
+                {
+                    "id": 20321,
+                    "name": "Багет Альпийский от пекарни Airba Fresh 300 г",
+                    "price_actual": 595.0,
+                    "price_previous": null,
+                    "discount": null,
+                    "description": "",
+                    "producing_country": "Казахстан",
+                    "brand": "Backerрай",
+                    "protein": null,
+                    "fats": null,
+                    "carbohydrates": null,
+                    "calories": null,
+                    "step": 1.0,
+                    "stocks_count": 74,
+                    "limit": 74,
+                    "unit_measurement": "шт",
+                    "is_alcohol": false,
+                    "strong_alcohol": false,
+                    "rating": "4.8",
+                    "rates_count": 29,
+                    "labels": [
+                        
+                    ],
+                    "watermark": null,
+                    "stickers": [
+                        
+                    ],
+                    "category": {
+                        "id": 1617,
+                        "full_hierarchy": "Продукты/Хлеб и пекарня/Хлеб/Классический/Классический",
+                        "hierarchy_level": 5
+                    },
+                    "af_choice": false,
+                    "is_exchangeable": false,
+                    "images": [
+                        {
+                            "image_origin_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_ed4388c091d481cdc09f4753deb6d2e5",
+                            "image_xs_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_ed4388c091d481cdc09f4753deb6d2e5?w=96&h=96&t=1693945800",
+                            "image_s_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_ed4388c091d481cdc09f4753deb6d2e5?w=144&h=144&t=1693945800",
+                            "image_m_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_ed4388c091d481cdc09f4753deb6d2e5?w=294&h=294&t=1693945800",
+                            "image_l_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_ed4388c091d481cdc09f4753deb6d2e5?w=294&h=294&t=1693945800",
+                            "image_xl_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_ed4388c091d481cdc09f4753deb6d2e5?w=462&h=462&t=1693945800"
+                        },
+                        {
+                            "image_origin_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_4c3059a46e5040b8439dd72d86a98e0c",
+                            "image_xs_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_4c3059a46e5040b8439dd72d86a98e0c?w=96&h=96&t=1693945800",
+                            "image_s_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_4c3059a46e5040b8439dd72d86a98e0c?w=144&h=144&t=1693945800",
+                            "image_m_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_4c3059a46e5040b8439dd72d86a98e0c?w=294&h=294&t=1693945800",
+                            "image_l_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_4c3059a46e5040b8439dd72d86a98e0c?w=294&h=294&t=1693945800",
+                            "image_xl_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_4c3059a46e5040b8439dd72d86a98e0c?w=462&h=462&t=1693945800"
+                        },
+                        {
+                            "image_origin_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_00ce597d92c9a7dbaa0e011c0c432149",
+                            "image_xs_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_00ce597d92c9a7dbaa0e011c0c432149?w=96&h=96&t=1693945800",
+                            "image_s_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_00ce597d92c9a7dbaa0e011c0c432149?w=144&h=144&t=1693945800",
+                            "image_m_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_00ce597d92c9a7dbaa0e011c0c432149?w=294&h=294&t=1693945800",
+                            "image_l_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_00ce597d92c9a7dbaa0e011c0c432149?w=294&h=294&t=1693945800",
+                            "image_xl_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_00ce597d92c9a7dbaa0e011c0c432149?w=462&h=462&t=1693945800"
+                        }
+                    ],
+                    "count": 1,
+                    "algolia_position": null,
+                    "navigation_path": [
+                        {
+                            "id": 1614,
+                            "hierarchy_level": 0,
+                            "name": "Продукты"
+                        },
+                        {
+                            "id": 1615,
+                            "hierarchy_level": 1,
+                            "name": "Хлеб и пекарня"
+                        },
+                        {
+                            "id": 1616,
+                            "hierarchy_level": 2,
+                            "name": "Хлеб"
+                        },
+                        {
+                            "id": 1617,
+                            "hierarchy_level": 3,
+                            "name": "Классический"
+                        }
+                    ],
+                    "outer_uuid": "0e454fef-cf83-11ed-9504-000c29ac8a23"
+                }
+            ],
+            "alcohol": [
+                
+            ],
+            "not_enough_in_stock": [
+                
+            ],
+            "out_of_stock": [
+                
+            ],
+            "upsale_products": [
+                {
+                    "id": 1228,
+                    "name": "Батончик Twix шоколадный с карамелью 55 г",
+                    "price_actual": 315.0,
+                    "price_previous": null,
+                    "discount": null,
+                    "description": "",
+                    "producing_country": "Россия",
+                    "brand": "Twix",
+                    "protein": 3.9,
+                    "fats": 24.3,
+                    "carbohydrates": 65.1,
+                    "calories": 497.0,
+                    "step": 1.0,
+                    "stocks_count": 34,
+                    "limit": 34,
+                    "unit_measurement": "шт",
+                    "is_alcohol": false,
+                    "strong_alcohol": false,
+                    "rating": "5.0",
+                    "rates_count": 9,
+                    "labels": [
+                        
+                    ],
+                    "watermark": null,
+                    "stickers": [
+                        
+                    ],
+                    "category": {
+                        "id": 1777,
+                        "full_hierarchy": "Продукты/Сладости, снеки и перекусы/Шоколад и конфеты/Шоколадные батончики/Шоколадные батончики",
+                        "hierarchy_level": 5
+                    },
+                    "af_choice": false,
+                    "is_exchangeable": false,
+                    "images": [
+                        {
+                            "image_origin_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_ff5837362f9824ea5833d432531d5efb",
+                            "image_xs_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_ff5837362f9824ea5833d432531d5efb?w=96&h=96&t=1693945800",
+                            "image_s_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_ff5837362f9824ea5833d432531d5efb?w=144&h=144&t=1693945800",
+                            "image_m_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_ff5837362f9824ea5833d432531d5efb?w=294&h=294&t=1693945800",
+                            "image_l_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_ff5837362f9824ea5833d432531d5efb?w=294&h=294&t=1693945800",
+                            "image_xl_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_ff5837362f9824ea5833d432531d5efb?w=462&h=462&t=1693945800"
+                        }
+                    ],
+                    "count": 0,
+                    "algolia_position": null,
+                    "navigation_path": [
+                        {
+                            "id": 1614,
+                            "hierarchy_level": 0,
+                            "name": "Продукты"
+                        },
+                        {
+                            "id": 1737,
+                            "hierarchy_level": 1,
+                            "name": "Сладости, снеки и перекусы"
+                        },
+                        {
+                            "id": 1772,
+                            "hierarchy_level": 2,
+                            "name": "Шоколад и конфеты"
+                        },
+                        {
+                            "id": 1777,
+                            "hierarchy_level": 3,
+                            "name": "Шоколадные батончики"
+                        }
+                    ]
+                },
+                {
+                    "id": 2575,
+                    "name": "Драже M&M's с арахисом 45 г",
+                    "price_actual": 365.0,
+                    "price_previous": null,
+                    "discount": null,
+                    "description": "",
+                    "producing_country": "Россия",
+                    "brand": "M&M's",
+                    "protein": 9.3,
+                    "fats": 24.5,
+                    "carbohydrates": 61.0,
+                    "calories": 507.0,
+                    "step": 1.0,
+                    "stocks_count": 48,
+                    "limit": 48,
+                    "unit_measurement": "шт",
+                    "is_alcohol": false,
+                    "strong_alcohol": false,
+                    "rating": "5.0",
+                    "rates_count": 7,
+                    "labels": [
+                        
+                    ],
+                    "watermark": null,
+                    "stickers": [
+                        
+                    ],
+                    "category": {
+                        "id": 1764,
+                        "full_hierarchy": "Продукты/Сладости, снеки и перекусы/Жвачка, драже, мармелад/Леденцы, драже/Леденцы, драже",
+                        "hierarchy_level": 5
+                    },
+                    "af_choice": false,
+                    "is_exchangeable": false,
+                    "images": [
+                        {
+                            "image_origin_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_a2a567a4591973c86a5799d992704fbe",
+                            "image_xs_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_a2a567a4591973c86a5799d992704fbe?w=96&h=96&t=1693945800",
+                            "image_s_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_a2a567a4591973c86a5799d992704fbe?w=144&h=144&t=1693945800",
+                            "image_m_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_a2a567a4591973c86a5799d992704fbe?w=294&h=294&t=1693945800",
+                            "image_l_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_a2a567a4591973c86a5799d992704fbe?w=294&h=294&t=1693945800",
+                            "image_xl_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_a2a567a4591973c86a5799d992704fbe?w=462&h=462&t=1693945800"
+                        }
+                    ],
+                    "count": 0,
+                    "algolia_position": null,
+                    "navigation_path": [
+                        {
+                            "id": 1614,
+                            "hierarchy_level": 0,
+                            "name": "Продукты"
+                        },
+                        {
+                            "id": 1737,
+                            "hierarchy_level": 1,
+                            "name": "Сладости, снеки и перекусы"
+                        },
+                        {
+                            "id": 1763,
+                            "hierarchy_level": 2,
+                            "name": "Жвачка, драже, мармелад"
+                        },
+                        {
+                            "id": 1764,
+                            "hierarchy_level": 3,
+                            "name": "Леденцы, драже"
+                        }
+                    ]
+                },
+                {
+                    "id": 6533,
+                    "name": "Мармелад Haribo Золотые мишки 80 г",
+                    "price_actual": 510.0,
+                    "price_previous": null,
+                    "discount": null,
+                    "description": "",
+                    "producing_country": "Венгрия",
+                    "brand": "Haribo",
+                    "protein": 6.9,
+                    "fats": 0.5,
+                    "carbohydrates": 77.0,
+                    "calories": 343.0,
+                    "step": 1.0,
+                    "stocks_count": 14,
+                    "limit": 14,
+                    "unit_measurement": "шт",
+                    "is_alcohol": false,
+                    "strong_alcohol": false,
+                    "rating": "5.0",
+                    "rates_count": 7,
+                    "labels": [
+                        
+                    ],
+                    "watermark": null,
+                    "stickers": [
+                        
+                    ],
+                    "category": {
+                        "id": 1765,
+                        "full_hierarchy": "Продукты/Сладости, снеки и перекусы/Жвачка, драже, мармелад/Мармелад/Мармелад",
+                        "hierarchy_level": 5
+                    },
+                    "af_choice": false,
+                    "is_exchangeable": false,
+                    "images": [
+                        {
+                            "image_origin_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_7f3a7e376363f0984c8fbc666efddf6b",
+                            "image_xs_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_7f3a7e376363f0984c8fbc666efddf6b?w=96&h=96&t=1693945800",
+                            "image_s_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_7f3a7e376363f0984c8fbc666efddf6b?w=144&h=144&t=1693945800",
+                            "image_m_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_7f3a7e376363f0984c8fbc666efddf6b?w=294&h=294&t=1693945800",
+                            "image_l_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_7f3a7e376363f0984c8fbc666efddf6b?w=294&h=294&t=1693945800",
+                            "image_xl_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_7f3a7e376363f0984c8fbc666efddf6b?w=462&h=462&t=1693945800"
+                        }
+                    ],
+                    "count": 0,
+                    "algolia_position": null,
+                    "navigation_path": [
+                        {
+                            "id": 1614,
+                            "hierarchy_level": 0,
+                            "name": "Продукты"
+                        },
+                        {
+                            "id": 1737,
+                            "hierarchy_level": 1,
+                            "name": "Сладости, снеки и перекусы"
+                        },
+                        {
+                            "id": 1763,
+                            "hierarchy_level": 2,
+                            "name": "Жвачка, драже, мармелад"
+                        },
+                        {
+                            "id": 1765,
+                            "hierarchy_level": 3,
+                            "name": "Мармелад"
+                        }
+                    ]
+                },
+                {
+                    "id": 12150,
+                    "name": "Леденец Chupa Chups тропик экзотик ассорти 12 г",
+                    "price_actual": 65.0,
+                    "price_previous": null,
+                    "discount": null,
+                    "description": "",
+                    "producing_country": "Россия",
+                    "brand": "Chupa Chups",
+                    "protein": 0.0,
+                    "fats": 0.0,
+                    "carbohydrates": 95.0,
+                    "calories": 380.0,
+                    "step": 1.0,
+                    "stocks_count": 38,
+                    "limit": 38,
+                    "unit_measurement": "шт",
+                    "is_alcohol": false,
+                    "strong_alcohol": false,
+                    "rating": "5.0",
+                    "rates_count": 6,
+                    "labels": [
+                        
+                    ],
+                    "watermark": null,
+                    "stickers": [
+                        
+                    ],
+                    "category": {
+                        "id": 1764,
+                        "full_hierarchy": "Продукты/Сладости, снеки и перекусы/Жвачка, драже, мармелад/Леденцы, драже/Леденцы, драже",
+                        "hierarchy_level": 5
+                    },
+                    "af_choice": false,
+                    "is_exchangeable": false,
+                    "images": [
+                        {
+                            "image_origin_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_5aba062833cdd354696969332f0ff62a",
+                            "image_xs_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_5aba062833cdd354696969332f0ff62a?w=96&h=96&t=1693945800",
+                            "image_s_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_5aba062833cdd354696969332f0ff62a?w=144&h=144&t=1693945800",
+                            "image_m_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_5aba062833cdd354696969332f0ff62a?w=294&h=294&t=1693945800",
+                            "image_l_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_5aba062833cdd354696969332f0ff62a?w=294&h=294&t=1693945800",
+                            "image_xl_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_5aba062833cdd354696969332f0ff62a?w=462&h=462&t=1693945800"
+                        }
+                    ],
+                    "count": 0,
+                    "algolia_position": null,
+                    "navigation_path": [
+                        {
+                            "id": 1614,
+                            "hierarchy_level": 0,
+                            "name": "Продукты"
+                        },
+                        {
+                            "id": 1737,
+                            "hierarchy_level": 1,
+                            "name": "Сладости, снеки и перекусы"
+                        },
+                        {
+                            "id": 1763,
+                            "hierarchy_level": 2,
+                            "name": "Жвачка, драже, мармелад"
+                        },
+                        {
+                            "id": 1764,
+                            "hierarchy_level": 3,
+                            "name": "Леденцы, драже"
+                        }
+                    ]
+                },
+                {
+                    "id": 5104,
+                    "name": "Шоколад Рахат молочный 100 г",
+                    "price_actual": 605.0,
+                    "price_previous": null,
+                    "discount": null,
+                    "description": "",
+                    "producing_country": "Казахстан",
+                    "brand": "Рахат",
+                    "protein": 5.7,
+                    "fats": 33.7,
+                    "carbohydrates": 55.9,
+                    "calories": 543.0,
+                    "step": 1.0,
+                    "stocks_count": 4,
+                    "limit": 4,
+                    "unit_measurement": "шт",
+                    "is_alcohol": false,
+                    "strong_alcohol": false,
+                    "rating": "5.0",
+                    "rates_count": 2,
+                    "labels": [
+                        
+                    ],
+                    "watermark": null,
+                    "stickers": [
+                        
+                    ],
+                    "category": {
+                        "id": 1774,
+                        "full_hierarchy": "Продукты/Сладости, снеки и перекусы/Шоколад и конфеты/Шоколад плиточный/Шоколад плиточный",
+                        "hierarchy_level": 5
+                    },
+                    "af_choice": false,
+                    "is_exchangeable": false,
+                    "images": [
+                        {
+                            "image_origin_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_175cf24c5959872cf6e2fab579d4b8d8",
+                            "image_xs_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_175cf24c5959872cf6e2fab579d4b8d8?w=96&h=96&t=1693945800",
+                            "image_s_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_175cf24c5959872cf6e2fab579d4b8d8?w=144&h=144&t=1693945800",
+                            "image_m_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_175cf24c5959872cf6e2fab579d4b8d8?w=294&h=294&t=1693945800",
+                            "image_l_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_175cf24c5959872cf6e2fab579d4b8d8?w=294&h=294&t=1693945800",
+                            "image_xl_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_175cf24c5959872cf6e2fab579d4b8d8?w=462&h=462&t=1693945800"
+                        }
+                    ],
+                    "count": 0,
+                    "algolia_position": null,
+                    "navigation_path": [
+                        {
+                            "id": 1614,
+                            "hierarchy_level": 0,
+                            "name": "Продукты"
+                        },
+                        {
+                            "id": 1737,
+                            "hierarchy_level": 1,
+                            "name": "Сладости, снеки и перекусы"
+                        },
+                        {
+                            "id": 1772,
+                            "hierarchy_level": 2,
+                            "name": "Шоколад и конфеты"
+                        },
+                        {
+                            "id": 1774,
+                            "hierarchy_level": 3,
+                            "name": "Шоколад плиточный"
+                        }
+                    ]
+                },
+                {
+                    "id": 6262,
+                    "name": "Яйцо Kinder Joy шоколадное для мальчиков 20 г",
+                    "price_actual": 715.0,
+                    "price_previous": null,
+                    "discount": null,
+                    "description": "",
+                    "producing_country": "Россия",
+                    "brand": "Kinder",
+                    "protein": 8.2,
+                    "fats": 32.0,
+                    "carbohydrates": 56.5,
+                    "calories": 550.0,
+                    "step": 1.0,
+                    "stocks_count": 18,
+                    "limit": 18,
+                    "unit_measurement": "шт",
+                    "is_alcohol": false,
+                    "strong_alcohol": false,
+                    "rating": "-",
+                    "rates_count": 0,
+                    "labels": [
+                        
+                    ],
+                    "watermark": null,
+                    "stickers": [
+                        
+                    ],
+                    "category": {
+                        "id": 1776,
+                        "full_hierarchy": "Продукты/Сладости, снеки и перекусы/Шоколад и конфеты/Шоколадные яйца/Шоколадные яйца",
+                        "hierarchy_level": 5
+                    },
+                    "af_choice": false,
+                    "is_exchangeable": false,
+                    "images": [
+                        {
+                            "image_origin_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_b2b5514800107026f28251953fd893df",
+                            "image_xs_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_b2b5514800107026f28251953fd893df?w=96&h=96&t=1693945800",
+                            "image_s_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_b2b5514800107026f28251953fd893df?w=144&h=144&t=1693945800",
+                            "image_m_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_b2b5514800107026f28251953fd893df?w=294&h=294&t=1693945800",
+                            "image_l_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_b2b5514800107026f28251953fd893df?w=294&h=294&t=1693945800",
+                            "image_xl_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_b2b5514800107026f28251953fd893df?w=462&h=462&t=1693945800"
+                        }
+                    ],
+                    "count": 0,
+                    "algolia_position": null,
+                    "navigation_path": [
+                        {
+                            "id": 1614,
+                            "hierarchy_level": 0,
+                            "name": "Продукты"
+                        },
+                        {
+                            "id": 1737,
+                            "hierarchy_level": 1,
+                            "name": "Сладости, снеки и перекусы"
+                        },
+                        {
+                            "id": 1772,
+                            "hierarchy_level": 2,
+                            "name": "Шоколад и конфеты"
+                        },
+                        {
+                            "id": 1776,
+                            "hierarchy_level": 3,
+                            "name": "Шоколадные яйца"
+                        }
+                    ]
+                },
+                {
+                    "id": 18261,
+                    "name": "Салфетки Reva Care влажные универсальные с Алоэ Вера 72 шт",
+                    "price_actual": 790.0,
+                    "price_previous": null,
+                    "discount": null,
+                    "description": "",
+                    "producing_country": "Россия",
+                    "brand": "Reva Care",
+                    "protein": null,
+                    "fats": null,
+                    "carbohydrates": null,
+                    "calories": null,
+                    "step": 1.0,
+                    "stocks_count": 10,
+                    "limit": 10,
+                    "unit_measurement": "шт",
+                    "is_alcohol": false,
+                    "strong_alcohol": false,
+                    "rating": "-",
+                    "rates_count": 0,
+                    "labels": [
+                        
+                    ],
+                    "watermark": null,
+                    "stickers": [
+                        
+                    ],
+                    "category": {
+                        "id": 1961,
+                        "full_hierarchy": "Для дома/Чистота и порядок/Бумага и салфетки/Влажные салфетки/Влажные салфетки",
+                        "hierarchy_level": 5
+                    },
+                    "af_choice": false,
+                    "is_exchangeable": false,
+                    "images": [
+                        {
+                            "image_origin_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_b77cd7ea008b951e851bbd92e2a037f9",
+                            "image_xs_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_b77cd7ea008b951e851bbd92e2a037f9?w=96&h=96&t=1693945800",
+                            "image_s_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_b77cd7ea008b951e851bbd92e2a037f9?w=144&h=144&t=1693945800",
+                            "image_m_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_b77cd7ea008b951e851bbd92e2a037f9?w=294&h=294&t=1693945800",
+                            "image_l_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_b77cd7ea008b951e851bbd92e2a037f9?w=294&h=294&t=1693945800",
+                            "image_xl_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_b77cd7ea008b951e851bbd92e2a037f9?w=462&h=462&t=1693945800"
+                        }
+                    ],
+                    "count": 0,
+                    "algolia_position": null,
+                    "navigation_path": [
+                        {
+                            "id": 1939,
+                            "hierarchy_level": 0,
+                            "name": "Для дома"
+                        },
+                        {
+                            "id": 1940,
+                            "hierarchy_level": 1,
+                            "name": "Чистота и порядок"
+                        },
+                        {
+                            "id": 1957,
+                            "hierarchy_level": 2,
+                            "name": "Бумага и салфетки"
+                        },
+                        {
+                            "id": 1961,
+                            "hierarchy_level": 3,
+                            "name": "Влажные салфетки"
+                        }
+                    ]
+                },
+                {
+                    "id": 1168,
+                    "name": "Драже Tic Tac апельсин 49 г",
+                    "price_actual": 605.0,
+                    "price_previous": null,
+                    "discount": null,
+                    "description": "",
+                    "producing_country": "Ирландия",
+                    "brand": "Tic Tac",
+                    "protein": 0.1,
+                    "fats": 0.7,
+                    "carbohydrates": 96.7,
+                    "calories": 400.0,
+                    "step": 1.0,
+                    "stocks_count": 15,
+                    "limit": 15,
+                    "unit_measurement": "шт",
+                    "is_alcohol": false,
+                    "strong_alcohol": false,
+                    "rating": "-",
+                    "rates_count": 0,
+                    "labels": [
+                        
+                    ],
+                    "watermark": null,
+                    "stickers": [
+                        
+                    ],
+                    "category": {
+                        "id": 1764,
+                        "full_hierarchy": "Продукты/Сладости, снеки и перекусы/Жвачка, драже, мармелад/Леденцы, драже/Леденцы, драже",
+                        "hierarchy_level": 5
+                    },
+                    "af_choice": false,
+                    "is_exchangeable": false,
+                    "images": [
+                        {
+                            "image_origin_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_570dde87f0f2654b1633579d424a33ed",
+                            "image_xs_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_570dde87f0f2654b1633579d424a33ed?w=96&h=96&t=1693945800",
+                            "image_s_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_570dde87f0f2654b1633579d424a33ed?w=144&h=144&t=1693945800",
+                            "image_m_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_570dde87f0f2654b1633579d424a33ed?w=294&h=294&t=1693945800",
+                            "image_l_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_570dde87f0f2654b1633579d424a33ed?w=294&h=294&t=1693945800",
+                            "image_xl_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_570dde87f0f2654b1633579d424a33ed?w=462&h=462&t=1693945800"
+                        }
+                    ],
+                    "count": 0,
+                    "algolia_position": null,
+                    "navigation_path": [
+                        {
+                            "id": 1614,
+                            "hierarchy_level": 0,
+                            "name": "Продукты"
+                        },
+                        {
+                            "id": 1737,
+                            "hierarchy_level": 1,
+                            "name": "Сладости, снеки и перекусы"
+                        },
+                        {
+                            "id": 1763,
+                            "hierarchy_level": 2,
+                            "name": "Жвачка, драже, мармелад"
+                        },
+                        {
+                            "id": 1764,
+                            "hierarchy_level": 3,
+                            "name": "Леденцы, драже"
+                        }
+                    ]
+                },
+                {
+                    "id": 1201,
+                    "name": "Батарейка Varta High Energy (LL power) Micro 1.5V-LR03/ААА 2 шт",
+                    "price_actual": 1500.0,
+                    "price_previous": null,
+                    "discount": null,
+                    "description": "",
+                    "producing_country": "Германия",
+                    "brand": "Varta",
+                    "protein": 0.0,
+                    "fats": 0.0,
+                    "carbohydrates": 0.0,
+                    "calories": 0.0,
+                    "step": 1.0,
+                    "stocks_count": 10,
+                    "limit": 10,
+                    "unit_measurement": "шт",
+                    "is_alcohol": false,
+                    "strong_alcohol": false,
+                    "rating": "-",
+                    "rates_count": 0,
+                    "labels": [
+                        
+                    ],
+                    "watermark": null,
+                    "stickers": [
+                        
+                    ],
+                    "category": {
+                        "id": 1988,
+                        "full_hierarchy": "Для дома/Чистота и порядок/Товары для дома/Полезные мелочи/Полезные мелочи",
+                        "hierarchy_level": 5
+                    },
+                    "af_choice": false,
+                    "is_exchangeable": false,
+                    "images": [
+                        {
+                            "image_origin_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_ea28f52222a50ce07a13eebd7ea8727b",
+                            "image_xs_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_ea28f52222a50ce07a13eebd7ea8727b?w=96&h=96&t=1693945800",
+                            "image_s_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_ea28f52222a50ce07a13eebd7ea8727b?w=144&h=144&t=1693945800",
+                            "image_m_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_ea28f52222a50ce07a13eebd7ea8727b?w=294&h=294&t=1693945800",
+                            "image_l_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_ea28f52222a50ce07a13eebd7ea8727b?w=294&h=294&t=1693945800",
+                            "image_xl_url": "https://f3.airbafresh.kz/api/v1/f3-airbafreshstatic/af_ea28f52222a50ce07a13eebd7ea8727b?w=462&h=462&t=1693945800"
+                        }
+                    ],
+                    "count": 0,
+                    "algolia_position": null,
+                    "navigation_path": [
+                        {
+                            "id": 1939,
+                            "hierarchy_level": 0,
+                            "name": "Для дома"
+                        },
+                        {
+                            "id": 1940,
+                            "hierarchy_level": 1,
+                            "name": "Чистота и порядок"
+                        },
+                        {
+                            "id": 1984,
+                            "hierarchy_level": 2,
+                            "name": "Товары для дома"
+                        },
+                        {
+                            "id": 1988,
+                            "hierarchy_level": 3,
+                            "name": "Полезные мелочи"
+                        }
+                    ]
+                }
+            ]
+        },
+        "products_amount": 595.0,
+        "alcohol_amount": 0.0,
+        "extra_hold_percentage": 0,
+        "extra_hold_amount": 0.0,
+        "delivery_amount": 0.0,
+        "bonus_discount_amount": 0.0,
+        "total_amount": 595.0,
+        "min_amount": 100,
+        "user": null,
+        "payment": {
+            "id": 0,
+            "card": {
+                "id": 40084,
+                "masked_number": "**** 5211",
+                "card_type": "VISA",
+                "is_current": true,
+                "bank_icon": "https://backend.airbafresh.kz/media/kaspibank_qgDXpCj.png",
+                "payment_provider": "IOKA"
+            },
+            "method": "CARD"
+        },
+        "store": {
+            "id": 1,
+            "outer_uuid": "e5fdb266-fb9e-11ec-94e4-000c296cf0d7",
+            "name": "DarkStore 1",
+            "closest_timeslot": {
+                "id": 8458,
+                "delivery_method": "SLOT",
+                "date": "2023-09-06",
+                "start_time": "16:00:00",
+                "end_time": "18:00:00",
+                "max_duration": null
+            }
+        },
+        "created_at": "2023-09-05T21:53",
+        "updated_at": "2023-09-05T21:54",
+        "user_favorites": [
+            
+        ],
+        "info_messages": [
+            
+        ],
+        "markup_amount": 0.0,
+        "apple_pay_enabled": true,
+        "google_pay_enabled": true
+    },
+    "error": null
+}
+]]></system-out>
+  </testcase>
+</testsuite>
